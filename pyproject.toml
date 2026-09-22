@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codebase-map"
+version = "1.0.0"
+description = "Local, dependency-free codebase structure mapper and statistics CLI."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Radwan Abdulhadi Ahmed"}]
+keywords = ["codebase", "architecture", "cli", "developer-tools", "repository"]
+
+[project.scripts]
+codebase-map = "codebase_map.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
